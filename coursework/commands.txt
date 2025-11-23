@@ -1,0 +1,6 @@
+===== TRIVY =====
+
+docker pull aquasec/trivy:latest
+cd D:\Labs\Revers\coursework\project\vuln-python-app
+docker run --rm -v ${PWD}:/project aquasec/trivy fs /project
+
