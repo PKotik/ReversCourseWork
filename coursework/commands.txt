@@ -4,3 +4,13 @@ docker pull aquasec/trivy:latest
 cd D:\Labs\Revers\coursework\project\vuln-python-app
 docker run --rm -v ${PWD}:/project aquasec/trivy fs /project
 
+
+
+===== CDXGEN =====
+cd D:\Labs\Revers\coursework\project\vuln-python-app
+docker run --rm -v ${PWD}:/app -t ghcr.io/cyclonedx/cdxgen-python39:v11 -r /app -o /app/sbom.json -t python
+
+
+
+docker run --rm -v ${PWD}:/project aquasec/trivy sbom /project/sbom.json
+
