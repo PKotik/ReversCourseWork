@@ -14,3 +14,8 @@ docker run --rm -v ${PWD}:/app -t ghcr.io/cyclonedx/cdxgen-python39:v11 -r /app 
 
 docker run --rm -v ${PWD}:/project aquasec/trivy sbom /project/sbom.json
 
+
+
+===== DefectDojo =====
+cd ~/dojo
+docker compose up
