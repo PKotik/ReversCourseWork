@@ -14,7 +14,15 @@ docker run --rm -v ${PWD}:/app -t ghcr.io/cyclonedx/cdxgen-python39:v11 -r /app 
 
 docker run --rm -v ${PWD}:/project aquasec/trivy sbom /project/sbom.json
 
+docker run --rm \
+  -v ${PWD}:/app \
+  -t ghcr.io/cyclonedx/cdxgen-python39:v11 \
+  --spec-version 1.4 \
+  -t python \
+  -o /app/sbom.json \
+  /app
 
+trivy sbom sbom.json --format json --quiet -o trivy.json
 
 ===== DefectDojo =====
 cd ~/dojo

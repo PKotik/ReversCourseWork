@@ -1,4 +1,4 @@
-flask==1.0
-requests==2.19.0
-pyyaml==5.1
-urllib3==1.24.1
+Flask==1.0        # CVE‑2018‑1000656, CVE‑2019‑1010083
+requests==2.19.0  # CVE‑2018‑18074
+urllib3==1.24.1   # CVE‑2019‑11324
+PyYAML==5.1       # CVE‑2020‑14343

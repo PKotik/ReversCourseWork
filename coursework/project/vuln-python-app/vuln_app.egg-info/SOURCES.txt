@@ -1,0 +1,7 @@
+pyproject.toml
+setup.py
+vuln_app.egg-info/PKG-INFO
+vuln_app.egg-info/SOURCES.txt
+vuln_app.egg-info/dependency_links.txt
+vuln_app.egg-info/requires.txt
+vuln_app.egg-info/top_level.txt
